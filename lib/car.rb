@@ -4,6 +4,7 @@ class Car
   @name = name
   @monthly_payment = monthly_payment
   @loan_length = loan_length
+  @color = nil
  end
 
  def make
@@ -19,11 +20,10 @@ class Car
  end
 
  def color
-
+  @color
  end
 
  def paint!(car_color)
-  color << car_color
-
- end
+  @color = car_color
+  end
 end

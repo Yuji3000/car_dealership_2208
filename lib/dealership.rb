@@ -20,4 +20,11 @@ class Dealership
     @has_inventory
   end
 
+    def cars_by_make(make)
+      @inventory.map do |make|
+        @car.make 
+      end
+
+    end
+  
 end
